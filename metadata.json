@@ -1,0 +1,5 @@
+{
+  "name": "POS Management System",
+  "description": "A web application for managing point-of-sale data across three branches. It allows employees to input daily sales figures and provides a password-protected interface for management to view consolidated reports.",
+  "requestFramePermissions": []
+}

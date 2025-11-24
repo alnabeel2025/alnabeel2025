@@ -1,0 +1,18 @@
+[build]
+  # مسار مجلد البناء لتطبيق React
+  publish = "dist"
+  # أمر البناء لتطبيق Vite
+  command = "npm install && npm run build"
+
+[functions]
+  # مسار دوال Netlify
+  directory = "functions"
+  # يجب أن يكون هذا متطابقًا مع المسار الذي تم استخدامه في الواجهة الأمامية
+  external_node_modules = ["mongodb"]
+  node_bundler = "esbuild"
+
+# إعادة توجيه (Redirect) لتمكين توجيه الواجهة الأمامية (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
